@@ -1,0 +1,53 @@
+/* COLORS ======= */
+
+$white: #FFF;
+$black: #000;
+$dark-grey: #33302c;
+$medium-grey: #65605a;
+$tan: #b7b0a7;
+$light-neutral: #e5e3dd;
+
+/* EMS ======= */
+
+@function em($target, $context: 16) {
+    @return ($target / $context) * 1em;
+}
+
+@mixin full-bleed-background{
+background-position:50% 0;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+@mixin quarter-second-transition{
+-webkit-transition-duration: .25s;
+-moz-transition-duration: .25s;
+-ms-transition-duration: .25s;
+-o-transition-duration: .25s;
+transition-duration: .25s;
+}
+
+@mixin half-em-border-radius{
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+-ms-border-radius: .5em;
+-o-border-radius: .5em;
+border-radius:.5em;
+}
+
+@mixin drop-shadow{
+-webkit-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-moz-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-ms-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-o-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+}
+
+@mixin text-emboss{
+text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+-webkit-text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+-moz-text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+-ms-text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+-o-text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+filter: dropshadow(color=#ffffff, offx=1, offy=1);
+}

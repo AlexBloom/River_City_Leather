@@ -1,0 +1,272 @@
+/* 	ADVANCED TYPOGRAPHY STYLES ============================================================================== */
+
+
+@font-face {
+	font-family: 'River-City-Leather';
+	src:url('../fonts/River-City-Leather.eot');
+	src:url('../fonts/River-City-Leather.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/River-City-Leather.woff') format('woff'),
+		url('../fonts/River-City-Leather.ttf') format('truetype'),
+		url('../fonts/River-City-Leather.svg#River-City-Leather') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'River-City-Leather';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-facebook, .icon-twitter, .icon-tumblr, .icon-pinterest, .icon-instagram, .icon-arrow-down, .icon-arrow-up {
+	font-family: 'River-City-Leather';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+	content: "\22";
+}
+.icon-twitter:before {
+	content: "\23";
+}
+.icon-tumblr:before {
+	content: "\24";
+}
+.icon-pinterest:before {
+	content: "\25";
+}
+.icon-instagram:before {
+	content: "\26";
+}
+.icon-arrow-down:before {
+	content: "\27";
+}
+.icon-arrow-up:before {
+	content: "\28";
+}
+
+
+
+
+
+body{
+	font-family:courier, serif;
+	line-height:1.75em;
+	font-size:1em;
+}
+
+
+
+h1{
+font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+font-weight:700;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:.1em;
+font-size:2em;
+line-height:1.75em;
+
+
+	@media screen and (min-width:(em(800))){
+		font-size:2.5em;
+	}
+
+}
+
+h2{
+font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+font-weight:700;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:.1em;
+
+	@media screen and (min-width:(em(800))){
+		font-size:2em;
+	}
+
+}
+
+h3{
+font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+font-weight:800;
+text-align:center;
+
+}
+
+h4{
+font-weight:600;
+}
+
+h5{
+font-weight:400;
+}
+
+h6{
+font-weight:300;
+}
+
+p{
+	font-size:1em;
+
+	@media screen and (min-width:(em(800))){
+		font-size:1.15em;
+	}
+
+
+}
+
+p.intro{
+	font-size:1.25em;
+	font-weight:500;
+	line-height:1.75em;
+	
+	@media screen and (min-width:(em(800))){
+		font-size:1.5em;
+	}
+
+}
+
+p.subtitle{
+text-align:center;
+display:block;
+font-size: 1em;
+font-weight:300;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:.2em;
+margin:2em auto 0 auto;
+padding:.8em;
+
+
+	>strong{
+	font-weight:800;
+	}
+
+}
+
+strong{
+font-weight:800;
+}
+
+small{
+
+}
+
+
+
+a{
+	text-decoration:none;
+	color:$black;
+}
+
+article a{
+	border-bottom:1px dotted $black;
+	color: $black;
+	display:inline-block;
+	padding: 0;
+
+	&:hover{
+		color:$black;
+		border:none;
+		border-bottom:1px dotted $black;
+	}
+
+	&:active{
+		background-color:$tan;
+		color:$white;
+		border-bottom:1px dotted $black;
+	}
+
+}
+
+blockquote{
+	font-style:italic; 
+	line-height:175%; 
+	font-size:1.15em; 
+	float:left; 
+	font-family:courier, serif; 
+	font-style:italic; 
+	font-weight:400; 
+	border-left: 1px dotted $light-neutral; 
+	padding: 0 0 0 2em; 
+	margin: 2em 0 2em;
+
+	@media screen and (min-width:(em(800))){
+		font-size:1.25em;
+	}
+
+}
+
+blockquote:before{
+	font-family:courier, serif;
+	content:"\201c";
+	font-size:5em;
+	color:$light-neutral;
+	text-indent:-1.25em;
+	margin-top:.25em;
+	float:left;
+}
+
+figure{
+
+}
+
+figcaption{
+font-size:0.9em;
+font-style:italic;
+padding:1.25em .75em .75em;
+line-height:175%;
+
+	@media screen and (min-width:(em(800))){
+		font-size:1em;
+	}
+
+}
+
+.run-in{
+font-size:.8em;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:.15em;
+}
+
+.subscript{
+	vertical-align:sub;
+	font-size:100%;
+	margin-right:.4em;
+	letter-spacing:.1em;
+	line-height:0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

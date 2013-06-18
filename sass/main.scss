@@ -61,8 +61,196 @@ textarea {
    ========================================================================== */
 
 
-header{}
+@import "mixins";
+@import "typography";
 
+
+
+header{
+    position:relative;
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0;
+    background-image:url(../img/paper_bg.jpg);
+    @include drop-shadow;
+    }
+    
+    #logo{
+        margin:2em;
+        float:left;
+    }
+
+    #primary{
+        float:left;
+        width:100%;
+        text-transform:uppercase;
+        letter-spacing:.1em;
+        @media screen and (min-width:(em(900))){
+                width:(em(450));
+                float:right;
+                margin:2em 10em 2em 0;
+                
+            }
+        ul{
+            width:96%;
+            margin:1em 2% 0 2%;
+            padding:0;
+            border-right:1px dotted $tan;
+            @media screen and (min-width:(em(450))){
+                width:(em(450));
+                float:none;
+                margin:0 auto;
+            }
+          
+            li{
+                float:left;
+                width:33%;
+            }
+        }
+    }
+    .primary-link{
+        display:block;
+        width:100%;
+        font-size:1.5em;
+        padding:.25em 0;
+        color:$dark-grey;
+        border-left:1px dotted $tan;
+        text-align:center;
+        &:hover{
+            color:$medium-grey;
+        }
+        &:active{
+            color:$black;
+        }
+    }
+    #mail{
+        position:absolute;
+        left:0;
+        top:1em;
+        background-color:$white;
+        @include drop-shadow;
+    }
+    #cart{
+        font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+        position:absolute;
+        overflow:hidden;
+        right:0;
+        top:2em;
+        color:$tan;
+        background-color:$white;
+        padding:.5em 0 .5em 1em;
+        text-transform:uppercase;
+        @include drop-shadow;
+        .cart-counter{
+            padding:1em;
+            margin-left:1em;
+            color:$white;
+            background-color:$tan;
+        }
+    }
+
+
+
+footer{
+    float:left;
+    width:100%;
+    text-align:center;
+    background-color:$tan;
+}
+    #footer-logo{
+        float:left;
+        width:100%;
+        background-color:$black;
+        padding:2em 0;
+    }
+    #footer-nav{
+        font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+        border-bottom:1px dotted $dark-grey;
+        float:left;
+        width:100%;
+        ul{
+            margin:0;
+            padding:0;
+            float:left;
+            width:100%;
+            @media screen and (min-width:(em(800))){
+                width:(em(800));
+                float:none;
+                margin:0 auto;
+            }
+            li{
+                float:left;
+                width:50%; 
+            }
+        }
+        .mail-links{
+            font-size:1.75em;
+            text-transform:uppercase;
+            display:block;
+            color:$dark-grey;
+            padding:1em 0;
+            &:hover{
+                color:$black;
+            }
+            &:active{
+                color:$tan;
+                background-color:$black;
+            } 
+        }
+    }
+    #location{
+        float:left;
+        width:100%;
+        padding:2em 0;
+    }
+    #social{
+        border-top:1px dotted $dark-grey;
+        float:left;
+        width:100%;
+        ul{
+            margin:0;
+            padding:0;
+            float:left;
+            width:100%;
+            @media screen and (min-width:(em(500))){
+                width:(em(500));
+                float:none;
+                margin:0 auto;
+            }
+            li{
+                float:left;
+                width:20%;
+            }
+        }
+        .social-links{
+            @include text-emboss;
+            font-size:1.75em;
+            display:block;
+            color:$dark-grey;
+            padding:1em 0;
+            &:hover{
+                color:$black;
+            }
+            &:active{
+                color:$tan;
+                background-color:$black;
+            } 
+        }
+    }
+    #copyright{
+        float:left;
+        width:100%;
+        padding:0 0 2em 0;
+        color:$medium-grey;
+        background-color:$black;
+    }
+
+
+    .page{
+        float:left;
+        width:100%;
+    }
 
 
 
