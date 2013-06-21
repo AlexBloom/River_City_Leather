@@ -51,3 +51,12 @@ text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
 -o-text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
 filter: dropshadow(color=#ffffff, offx=1, offy=1);
 }
+
+@mixin text-shadow{
+text-shadow: 2px 2px 5px rgba(0,0,0,0.95);
+-webkit-text-shadow: 2px 2px 5px rgba(0,0,0,0.95);
+-moz-text-shadow: 2px 2px 5px rgba(0,0,0,0.95);
+-ms-text-shadow: 2px 2px 5px rgba(0,0,0,0.95);
+-o-text-shadow: 2px 2px 5px rgba(0,0,0,0.95);
+filter: dropshadow(color=#000000, offx=2, offy=2);
+}
