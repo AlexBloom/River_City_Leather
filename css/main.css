@@ -292,7 +292,7 @@ figcaption {
   float: left;
   width: 100%;
   padding: .5em;
-  margin: 0 1em;
+  margin: 0;
   text-transform: uppercase;
   letter-spacing: .1em;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
@@ -309,8 +309,8 @@ figcaption {
 
 .filter-list {
   list-style-type: none;
-  margin: 0 5%;
-  width: 90%; }
+  margin: 0;
+  width: 100%; }
   .filter-list li {
     float: left;
     width: 100%; }
@@ -355,9 +355,88 @@ figcaption {
     line-height: 1.75em;
     margin: .5em 0 .25em 0; }
 
+.content {
+  padding: 2em; }
+  @media screen and (min-width: 60em) {
+    .content {
+      width: 60em;
+      margin: 0 auto; } }
+  .content h1 {
+    text-align: left;
+    line-height: 1.25em; }
+
+.product-description {
+  float: left; }
+  @media screen and (min-width: 60em) {
+    .product-description {
+      width: 37.5em; } }
+
+.product-detail-images {
+  float: left; }
+  .product-detail-images li {
+    background-color: white;
+    padding: .5em;
+    margin: 1em 0 0 0;
+    list-style-type: none;
+    -webkit-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5); }
+    .product-detail-images li img {
+      width: 100%; }
+
+.product-specs {
+  float: left;
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.5); }
+  @media screen and (min-width: 60em) {
+    .product-specs {
+      width: 17.5em;
+      float: right;
+      margin: 1.5em 0 0 0; } }
+  .product-specs .price {
+    display: block;
+    text-transform: uppercase;
+    float: left;
+    clear: both;
+    padding: 0em .75em; }
+  .product-specs form {
+    float: left;
+    width: 100%; }
+  .product-specs fieldset {
+    padding: 1.5em .5em;
+    border-top: 1px solid #e5e3dd; }
+  .product-specs input {
+    width: 7.5em; }
+  .product-specs .submit {
+    width: 100%;
+    padding: 1.75em 1em;
+    border: 0;
+    background-color: #33302c;
+    color: #e5e3dd;
+    letter-spacing: .25em; }
+    .product-specs .submit:hover {
+      color: white; }
+    .product-specs .submit:active {
+      background-color: black; }
+
 ul {
   margin: 0;
   padding: 0; }
+
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 6.25em; }
 
 header {
   position: relative;
@@ -484,8 +563,9 @@ footer {
       float: left;
       width: 50%; }
   #footer-nav .mail-links {
-    font-size: 1.75em;
+    font-size: 1em;
     text-transform: uppercase;
+    letter-spacing: .1em;
     display: block;
     color: #33302c;
     padding: 1em 0; }
@@ -494,6 +574,9 @@ footer {
     #footer-nav .mail-links:active {
       color: #b7b0a7;
       background-color: black; }
+    @media screen and (min-width: 50em) {
+      #footer-nav .mail-links {
+        font-size: 1.75em; } }
 
 #location {
   float: left;

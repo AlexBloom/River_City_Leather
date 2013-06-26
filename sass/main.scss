@@ -70,6 +70,13 @@ ul{
     padding:0;
 }
 
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width:(em(100));
+}
+
 header{
     position:relative;
     float:left;
@@ -200,8 +207,9 @@ footer{
             }
         }
         .mail-links{
-            font-size:1.75em;
+            font-size:1em;
             text-transform:uppercase;
+            letter-spacing:.1em;
             display:block;
             color:$dark-grey;
             padding:1em 0;
@@ -212,6 +220,9 @@ footer{
                 color:$tan;
                 background-color:$black;
             } 
+            @media screen and (min-width:(em(800))){
+                font-size:1.75em;  
+            }
         }
     }
     #location{
