@@ -67,7 +67,7 @@ you can use the generic selector below, but it's slower:
 
 
 body{
-	font-family:courier, serif;
+	font-family:"schoolbook-web" georgia, serif;
 	line-height:1.75em;
 	font-size:1em;
 }
@@ -106,6 +106,8 @@ letter-spacing:.1em;
 h3{
 font-family:"alternate-gothic-no-3-d", helvetica, arial, sans-serif;
 font-weight:800;
+text-transform:uppercase;
+letter-spacing:.1em;
 }
 
 h4{
@@ -133,7 +135,7 @@ p{
 p.intro{
 	font-size:1.25em;
 	font-weight:500;
-	line-height:1.75em;
+	line-height:1.5em;
 	
 	@media screen and (min-width:(em(800))){
 		font-size:1.5em;
@@ -199,7 +201,7 @@ blockquote{
 	line-height:175%; 
 	font-size:1.15em; 
 	float:left; 
-	font-family:courier, serif; 
+	font-family:"chaparral-pro", serif; 
 	font-style:italic; 
 	font-weight:400; 
 	border-left: 1px dotted $light-neutral; 
@@ -213,7 +215,7 @@ blockquote{
 }
 
 blockquote:before{
-	font-family:courier, serif;
+	font-family:"chaparral-pro", serif;
 	content:"\201c";
 	font-size:5em;
 	color:$light-neutral;

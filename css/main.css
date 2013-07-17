@@ -107,7 +107,7 @@ you can use the generic selector below, but it's slower:
   content: "\28"; }
 
 body {
-  font-family: courier, serif;
+  font-family: "schoolbook-web" georgia, serif;
   line-height: 1.75em;
   font-size: 1em; }
 
@@ -135,7 +135,9 @@ h2 {
 
 h3 {
   font-family: "alternate-gothic-no-3-d", helvetica, arial, sans-serif;
-  font-weight: 800; }
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .1em; }
 
 h4 {
   font-weight: 600; }
@@ -155,7 +157,7 @@ p {
 p.intro {
   font-size: 1.25em;
   font-weight: 500;
-  line-height: 1.75em; }
+  line-height: 1.5em; }
   @media screen and (min-width: 50em) {
     p.intro {
       font-size: 1.5em; } }
@@ -199,7 +201,7 @@ blockquote {
   line-height: 175%;
   font-size: 1.15em;
   float: left;
-  font-family: courier, serif;
+  font-family: "chaparral-pro", serif;
   font-style: italic;
   font-weight: 400;
   border-left: 1px dotted #e5e3dd;
@@ -210,7 +212,7 @@ blockquote {
       font-size: 1.25em; } }
 
 blockquote:before {
-  font-family: courier, serif;
+  font-family: "chaparral-pro", serif;
   content: "\201c";
   font-size: 5em;
   color: #e5e3dd;
@@ -271,6 +273,17 @@ figcaption {
   -ms-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.95);
   -o-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.95);
   filter: dropshadow(color=black, offx=2, offy=2); }
+
+.hero-caption {
+  position: absolute;
+  bottom: -4em;
+  z-index: 10;
+  width: 94%;
+  padding: 0 3%;
+  text-align: right;
+  font-size: .75em;
+  font-style: italic;
+  color: #65605a; }
 
 .button {
   display: block;
@@ -415,10 +428,12 @@ figcaption {
     padding: 1.5em .5em;
     border-top: 1px solid #e5e3dd; }
   .product-specs input {
-    width: 7.5em; }
+    width: 6.25em; }
   .product-specs .submit {
+    font-family: "alternate-gothic-no-3-d", helvetica, arial, sans-serif;
+    font-size: 1.25em;
     width: 100%;
-    padding: 1.75em 1em;
+    padding: 1.25em 1em;
     border: 0;
     background-color: #33302c;
     color: #e5e3dd;
@@ -427,6 +442,14 @@ figcaption {
       color: white; }
     .product-specs .submit:active {
       background-color: black; }
+
+article h1, article h2, article h3, article p {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -webkit-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -moz-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -ms-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -o-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  filter: dropshadow(color=white, offx=1, offy=1); }
 
 ul {
   margin: 0;
